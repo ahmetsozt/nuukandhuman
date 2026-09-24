@@ -10,8 +10,11 @@ function fieldLabel(site, field, lang) {
   return t(site.forms.labels[field.name], lang);
 }
 
-function control(ctx, formId, field) {
+function control(ctx, formId, field, mode) {
   const { site, lang, urls } = ctx;
+  if (field.type === "file" && mode === "email") {
+    return `<div class="field field-wide field-note"><p>${esc(t(site.forms.labels.attach_cv, lang))}</p></div>`;
+  }
   const id = `${formId}-${field.name}`;
   const req = field.required ? " required" : "";
   const describedBy = `aria-describedby="${id}-error"`;
@@ -47,31 +50,43 @@ function control(ctx, formId, field) {
 </div>`;
 }
 
+/** Which submission route is available, in order of preference. */
+export function formMode(site) {
+  if (site.backend.form_endpoint) return "endpoint";
+  if (site.identity.contact.email) return "email";
+  return "offline";
+}
+
 /**
- * Renders a form from site.json. When no backend endpoint is configured the
- * form is shown for transparency but every control is disabled and no success
- * state can ever appear (brief rule: success only on a real server response).
+ * Renders a form from site.json.
+ * - endpoint: POSTs to the backend; success only on a real 2xx response.
+ * - email: opens the visitor's mail app pre-filled (nothing is sent by the site).
+ * - offline: shown for transparency, every control disabled.
  */
 export function renderForm(ctx, formId) {
   const { site, lang } = ctx;
   const form = site.forms.items.find((f) => f.id === formId);
   if (!form) throw new Error(`Unknown form ${formId}`);
-  const endpoint = site.backend.form_endpoint;
-  const live = Boolean(endpoint);
+  const mode = formMode(site);
   const L = site.forms.labels;
-  const offline = live
-    ? ""
-    : `<div class="form-offline" role="status"><p class="form-offline-title">${esc(t(L.offline_title, lang))}</p><p>${esc(t(L.offline_body, lang))}</p></div>`;
-  const fields = form.fields.map((f) => control(ctx, formId, f)).join("\n");
-  const messages = ["sending", "success", "error", "invalid", "file_too_large", "file_type"]
+  const offline = mode === "offline"
+    ? `<div class="form-offline" role="status"><p class="form-offline-title">${esc(t(L.offline_title, lang))}</p><p>${esc(t(L.offline_body, lang))}</p></div>`
+    : "";
+  const fields = form.fields.map((f) => control(ctx, formId, f, mode)).join("\n");
+  const messages = ["sending", "success", "error", "invalid", "file_too_large", "file_type", "email_opened"]
     .map((k) => `data-msg-${k.replace(/_/g, "-")}="${esc(t(L[k], lang))}"`)
     .join(" ");
+  const attrs = {
+    endpoint: `action="${esc(site.backend.form_endpoint)}" method="post" data-live${form.fields.some((f) => f.type === "file") ? ' enctype="multipart/form-data"' : ""}`,
+    email: `data-mailto="${esc(site.identity.contact.email)}" data-subject="${esc(`${t(form.submit_label, lang)} — NUUK & Human`)}"`,
+    offline: 'aria-disabled="true"',
+  }[mode];
   return `${offline}
-<form class="intake-form" id="${formId}-form" novalidate ${live ? `action="${esc(endpoint)}" method="post" data-live` : 'aria-disabled="true"'} ${messages}${form.fields.some((f) => f.type === "file") ? ' enctype="multipart/form-data"' : ""}>
+<form class="intake-form" id="${formId}-form" novalidate data-mode="${mode}" ${attrs} ${messages}>
   <input type="hidden" name="form_id" value="${esc(formId)}">
   <input type="hidden" name="lang" value="${lang}">
   <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-  <fieldset${live ? "" : " disabled"}>
+  <fieldset${mode === "offline" ? " disabled" : ""}>
   <legend class="sr-only">${esc(t(form.submit_label, lang))}</legend>
   <div class="field-grid">
 ${fields}

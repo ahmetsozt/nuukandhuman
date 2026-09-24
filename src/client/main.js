@@ -87,6 +87,44 @@
     return firstBad;
   }
 
+  // Email mode: open the visitor's mail app pre-filled. The site itself sends nothing,
+  // so the status tells them to press send in their mail app rather than claiming receipt.
+  const MAX_BODY = 1600; // keep mailto: URLs under common client limits
+  const labelText = (field) => {
+    const label = document.querySelector(`label[for="${field.id}"]`);
+    if (!label) return field.name;
+    const clone = label.cloneNode(true);
+    clone.querySelectorAll(".req, .opt").forEach((n) => n.remove());
+    return clone.textContent.trim().replace(/[.:]$/, "");
+  };
+  const fieldValue = (field) => {
+    if (field.type === "checkbox") return field.checked ? "✓" : "—";
+    if (field.tagName === "SELECT") return field.selectedOptions[0]?.textContent.trim() ?? "";
+    return field.value.trim();
+  };
+
+  document.querySelectorAll('form[data-mode="email"]').forEach((form) => {
+    const status = form.querySelector("[data-status]");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const bad = validate(form);
+      if (bad) {
+        status.textContent = msg(form, "invalid");
+        bad.focus();
+        return;
+      }
+      if (form.querySelector(".hp input").value) return;
+      const lines = [...form.querySelectorAll(".field input, .field select, .field textarea")]
+        .map((f) => `${labelText(f)}: ${fieldValue(f)}`)
+        .filter((line) => !line.endsWith(": "));
+      let body = lines.join("\n");
+      if (body.length > MAX_BODY) body = `${body.slice(0, MAX_BODY)}…`;
+      const href = `mailto:${form.dataset.mailto}?subject=${encodeURIComponent(form.dataset.subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = href;
+      status.textContent = msg(form, "email-opened");
+    });
+  });
+
   document.querySelectorAll("form[data-live]").forEach((form) => {
     const status = form.querySelector("[data-status]");
     const button = form.querySelector("button[type=submit]");

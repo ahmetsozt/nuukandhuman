@@ -4,7 +4,7 @@ import { readFile, readdir, stat } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { tmpdir } from "node:os";
 import { mkdtemp } from "node:fs/promises";
-import { build } from "../src/build.mjs";
+import { build, loadSite } from "../src/build.mjs";
 import { esc, t, createUrls } from "../src/lib/html.mjs";
 
 const BASE = "/nuukandhuman";
@@ -58,13 +58,14 @@ test("no private planning data or placeholder values reach the output", async ()
   }
 });
 
-test("each page has lang, one h1, noindex while in draft, and a CSP", async () => {
+test("each page has lang, one h1, is indexable, and has a CSP", async () => {
   for (const file of htmlFiles) {
     const html = await readFile(file, "utf8");
     const isTr = file.includes(`${outDir}/tr/`);
     assert.match(html, new RegExp(`<html lang="${isTr ? "tr" : "en"}"`), file);
     assert.equal((html.match(/<h1[\s>]/g) ?? []).length, 1, `${file} h1 count`);
-    assert.match(html, /name="robots" content="noindex/);
+    assert.doesNotMatch(html, /name="robots" content="noindex/);
+    assert.doesNotMatch(html, /class="draft-banner"/);
     assert.match(html, /Content-Security-Policy/);
   }
 });
@@ -83,6 +84,7 @@ test("all internal links and assets resolve to built files", async () => {
 test("forms cannot submit and show no success state without a backend", async () => {
   for (const page of ["employers", "candidates"]) {
     const html = await readFile(join(outDir, page, "index.html"), "utf8");
+    assert.match(html, /data-mode="offline"/);
     assert.match(html, /<fieldset disabled>/);
     assert.match(html, /aria-disabled="true"/);
     assert.doesNotMatch(html, /data-live/);
@@ -107,6 +109,47 @@ test("candidate pages state the no-fee policy and the scam notice", async () => 
   assert.match(tr, /ücreti alınmaz/);
 });
 
-test("robots.txt blocks crawling while indexing is off", async () => {
-  assert.equal(await readFile(join(outDir, "robots.txt"), "utf8"), "User-agent: *\nDisallow: /\n");
+test("robots.txt allows crawling and points at a sitemap listing every page", async () => {
+  const robots = await readFile(join(outDir, "robots.txt"), "utf8");
+  assert.match(robots, /Allow: \//);
+  assert.match(robots, /Sitemap: https:\/\/ahmetsozt\.github\.io\/nuukandhuman\/sitemap\.xml/);
+  const map = await readFile(join(outDir, "sitemap.xml"), "utf8");
+  assert.equal((map.match(/<loc>/g) ?? []).length, htmlFiles.length - 1);
+});
+
+test("legal pages carry real sections and a draft note", async () => {
+  for (const page of ["privacy", "candidate-privacy", "terms", "tr/privacy"]) {
+    const html = await readFile(join(outDir, page, "index.html"), "utf8");
+    assert.ok((html.match(/<h2>/g) ?? []).length >= 5, page);
+    assert.match(html, /class="legal-note"/);
+  }
+});
+
+test("home page has Open Graph image and Organization JSON-LD without contact data", async () => {
+  const html = await readFile(join(outDir, "index.html"), "utf8");
+  assert.match(html, /og:image" content="https:\/\/ahmetsozt\.github\.io\/nuukandhuman\/assets\/og-image\.png"/);
+  const ld = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)[1]);
+  assert.equal(ld["@type"], "Organization");
+  assert.equal(ld.email, undefined);
+  await stat(join(outDir, "assets", "og-image.png"));
+});
+
+test("with a contact email, forms switch to email mode and drop the file upload", async () => {
+  const site = await loadSite();
+  const withEmail = { ...site, identity: { ...site.identity, contact: { ...site.identity.contact, email: "hello@example.com" } } };
+  const dir = await mkdtemp(join(tmpdir(), "nuh-email-"));
+  await build({ site: withEmail, basePath: BASE, outDir: dir });
+  const html = await readFile(join(dir, "candidates", "index.html"), "utf8");
+  assert.match(html, /data-mode="email"/);
+  assert.match(html, /data-mailto="hello@example.com"/);
+  assert.doesNotMatch(html, /type="file"/);
+  assert.doesNotMatch(html, /<fieldset disabled>/);
+  assert.match(html, /form-action &#39;self&#39; mailto:/);
+  assert.match(await readFile(join(dir, "contact", "index.html"), "utf8"), /mailto:hello@example.com/);
+});
+
+test("an invalid contact email fails the build", async () => {
+  const site = await loadSite();
+  const bad = { ...site, identity: { ...site.identity, contact: { ...site.identity.contact, email: "not-an-email" } } };
+  await assert.rejects(build({ site: bad, basePath: BASE, outDir: await mkdtemp(join(tmpdir(), "nuh-bad-")) }), /not a valid address/);
 });

@@ -151,9 +151,19 @@ function contact(ctx) {
   };
 }
 
+function legalBody(ctx, page) {
+  const { site, lang } = ctx;
+  if (!page.content) return `<p>${esc(t(site.ui.legal_pending, lang))}</p>`;
+  const content = t(page.content, lang);
+  if (typeof content === "string") return `<p>${esc(content)}</p>`;
+  return content
+    .map((sec) => `<h2>${esc(sec.h)}</h2>${sec.p.map((para) => `<p>${esc(para)}</p>`).join("")}`)
+    .join("\n");
+}
+
 function legal(ctx, page) {
   const { site, lang } = ctx;
-  const content = page.content ? t(page.content, lang) : t(site.ui.legal_pending, lang);
+  const note = page.draft ? `<p class="legal-note">${esc(t(site.ui.legal_draft_note, lang))}</p>` : "";
   return {
     path: page.path,
     activeId: null,
@@ -161,7 +171,7 @@ function legal(ctx, page) {
     description: t(page.title, lang),
     body: join([
       pageHero(ctx, { kicker: t(site.ui.legal, lang), title: t(page.title, lang) }),
-      `<section class="section"><div class="wrap prose"><p>${esc(content)}</p></div></section>`,
+      `<section class="section"><div class="wrap prose">${note}${legalBody(ctx, page)}</div></section>`,
     ]),
   };
 }

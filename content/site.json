@@ -6,20 +6,41 @@
   "note": "Public website content only. internal_business_plan and publication_checks from brief 1.0.0 are intentionally NOT in this repository.",
   "identity": {
     "name": "NUUK & Human",
-    "descriptor": { "en": "Specialist Recruitment & HR Advisory", "tr": "Uzman İşe Alımı ve İK Danışmanlığı" },
-    "tagline": { "en": "Sector expertise. Human judgment.", "tr": "Sektör bilgisi. İnsan odaklı değerlendirme." },
+    "descriptor": {
+      "en": "Specialist Recruitment & HR Advisory",
+      "tr": "Uzman İşe Alımı ve İK Danışmanlığı"
+    },
+    "tagline": {
+      "en": "Sector expertise. Human judgment.",
+      "tr": "Sektör bilgisi. İnsan odaklı değerlendirme."
+    },
     "positioning": {
       "en": "Specialist recruitment and HR advisory for financial markets, real estate and technical sectors.",
       "tr": "Finansal piyasalar, gayrimenkul ve teknik sektörlere yönelik uzman işe alımı ve İK danışmanlığı."
     },
-    "location_label": { "en": "Dubai · United Arab Emirates", "tr": "Dubai · Birleşik Arap Emirlikleri" },
-    "corridor_label": { "en": "Türkiye–UAE talent corridor", "tr": "Türkiye–BAE yetenek koridoru" },
-    "languages": ["en", "tr"],
+    "location_label": {
+      "en": "Dubai · United Arab Emirates",
+      "tr": "Dubai · Birleşik Arap Emirlikleri"
+    },
+    "corridor_label": {
+      "en": "Türkiye–UAE talent corridor",
+      "tr": "Türkiye–BAE yetenek koridoru"
+    },
+    "languages": [
+      "en",
+      "tr"
+    ],
     "default_language": "en",
     "legal_name": null,
     "trade_license_number": null,
     "registered_address": null,
-    "contact": { "email": null, "phone": null, "whatsapp": null, "linkedin": null, "booking_url": null },
+    "contact": {
+      "email": null,
+      "phone": null,
+      "whatsapp": null,
+      "linkedin": null,
+      "booking_url": null
+    },
     "brand_separation": {
       "en": "NUUK & Human provides recruitment and HR advisory services only. It does not provide investment, brokerage or financial services.",
       "tr": "NUUK & Human yalnızca işe alım ve İK danışmanlığı hizmeti verir. Yatırım, aracılık veya finansal hizmet sunmaz."
@@ -38,89 +59,228 @@
       "muted_text": "#4F5869",
       "line": "#DAD6CC"
     },
-    "typography": { "display": "Cormorant Garamond", "body": "Manrope", "fallback": "Georgia, Arial, sans-serif", "turkish_character_support": true },
+    "typography": {
+      "display": "Cormorant Garamond",
+      "body": "Manrope",
+      "fallback": "Georgia, Arial, sans-serif",
+      "turkish_character_support": true
+    },
     "research_basis": "docs/research.md"
   },
   "navigation": [
-    { "id": "about", "label": { "en": "About", "tr": "Hakkımızda" }, "path": "/about/" },
-    { "id": "sectors", "label": { "en": "Sectors", "tr": "Sektörler" }, "path": "/sectors/" },
-    { "id": "services", "label": { "en": "Services", "tr": "Hizmetler" }, "path": "/services/" },
-    { "id": "employers", "label": { "en": "For Employers", "tr": "İşverenler" }, "path": "/employers/" },
-    { "id": "candidates", "label": { "en": "For Candidates", "tr": "Adaylar" }, "path": "/candidates/" },
-    { "id": "contact", "label": { "en": "Contact", "tr": "İletişim" }, "path": "/contact/" }
+    {
+      "id": "about",
+      "label": {
+        "en": "About",
+        "tr": "Hakkımızda"
+      },
+      "path": "/about/"
+    },
+    {
+      "id": "sectors",
+      "label": {
+        "en": "Sectors",
+        "tr": "Sektörler"
+      },
+      "path": "/sectors/"
+    },
+    {
+      "id": "services",
+      "label": {
+        "en": "Services",
+        "tr": "Hizmetler"
+      },
+      "path": "/services/"
+    },
+    {
+      "id": "employers",
+      "label": {
+        "en": "For Employers",
+        "tr": "İşverenler"
+      },
+      "path": "/employers/"
+    },
+    {
+      "id": "candidates",
+      "label": {
+        "en": "For Candidates",
+        "tr": "Adaylar"
+      },
+      "path": "/candidates/"
+    },
+    {
+      "id": "contact",
+      "label": {
+        "en": "Contact",
+        "tr": "İletişim"
+      },
+      "path": "/contact/"
+    }
   ],
   "home": {
     "hero": {
-      "eyebrow": { "en": "Financial Markets · Real Estate · Technical Sectors", "tr": "Finansal Piyasalar · Gayrimenkul · Teknik Sektörler" },
-      "headline": { "en": "Find the people who move your business forward.", "tr": "İşinizi ileri taşıyacak insanlarla buluşun." },
+      "eyebrow": {
+        "en": "Financial Markets · Real Estate · Technical Sectors",
+        "tr": "Finansal Piyasalar · Gayrimenkul · Teknik Sektörler"
+      },
+      "headline": {
+        "en": "Find the people who move your business forward.",
+        "tr": "İşinizi ileri taşıyacak insanlarla buluşun."
+      },
       "body": {
         "en": "NUUK & Human brings a sector-focused approach to specialist recruitment, executive search and HR advisory. We work to understand the role, evaluate the person and support the organization behind every hire.",
         "tr": "NUUK & Human; uzman işe alımı, yönetici araştırması ve İK danışmanlığında sektörel bir yaklaşım benimser. Pozisyonu anlamak, adayı değerlendirmek ve her işe alımın arkasındaki organizasyonu desteklemek için çalışırız."
       },
-      "primary_cta": { "label": { "en": "Discuss a Hiring Need", "tr": "İşe Alım İhtiyacınızı Paylaşın" }, "href": "/employers/#inquiry" },
-      "secondary_cta": { "label": { "en": "Submit Your Profile", "tr": "Profilinizi Paylaşın" }, "href": "/candidates/#submit" }
+      "primary_cta": {
+        "label": {
+          "en": "Discuss a Hiring Need",
+          "tr": "İşe Alım İhtiyacınızı Paylaşın"
+        },
+        "href": "/employers/#inquiry"
+      },
+      "secondary_cta": {
+        "label": {
+          "en": "Submit Your Profile",
+          "tr": "Profilinizi Paylaşın"
+        },
+        "href": "/candidates/#submit"
+      }
     },
     "paths": {
       "employer": {
-        "kicker": { "en": "I am hiring", "tr": "İşe alım yapıyorum" },
-        "title": { "en": "Build the team your next stage needs.", "tr": "Bir sonraki aşamanızın ihtiyaç duyduğu ekibi kurun." },
+        "kicker": {
+          "en": "I am hiring",
+          "tr": "İşe alım yapıyorum"
+        },
+        "title": {
+          "en": "Build the team your next stage needs.",
+          "tr": "Bir sonraki aşamanızın ihtiyaç duyduğu ekibi kurun."
+        },
         "href": "/employers/"
       },
       "candidate": {
-        "kicker": { "en": "I am a candidate", "tr": "Adayım" },
-        "title": { "en": "Bring your experience into the right conversation.", "tr": "Deneyiminizi doğru fırsatlarla buluşturun." },
+        "kicker": {
+          "en": "I am a candidate",
+          "tr": "Adayım"
+        },
+        "title": {
+          "en": "Bring your experience into the right conversation.",
+          "tr": "Deneyiminizi doğru fırsatlarla buluşturun."
+        },
         "href": "/candidates/"
       }
     },
-    "differentiators_title": { "en": "How we approach every assignment", "tr": "Her projeye yaklaşımımız" },
+    "differentiators_title": {
+      "en": "How we approach every assignment",
+      "tr": "Her projeye yaklaşımımız"
+    },
     "differentiators": [
       {
-        "title": { "en": "Sector understanding", "tr": "Sektörel kavrayış" },
-        "body": { "en": "Hiring briefs that connect technical requirements with commercial priorities.", "tr": "Teknik gereklilikleri ticari önceliklerle birleştiren işe alım ihtiyaç analizi." }
+        "title": {
+          "en": "Sector understanding",
+          "tr": "Sektörel kavrayış"
+        },
+        "body": {
+          "en": "Hiring briefs that connect technical requirements with commercial priorities.",
+          "tr": "Teknik gereklilikleri ticari önceliklerle birleştiren işe alım ihtiyaç analizi."
+        }
       },
       {
-        "title": { "en": "Structured assessment", "tr": "Yapılandırılmış değerlendirme" },
-        "body": { "en": "Role-specific interviews and clear evaluation criteria, supported by human judgment.", "tr": "İnsan değerlendirmesiyle desteklenen, pozisyona özgü mülakatlar ve açık değerlendirme ölçütleri." }
+        "title": {
+          "en": "Structured assessment",
+          "tr": "Yapılandırılmış değerlendirme"
+        },
+        "body": {
+          "en": "Role-specific interviews and clear evaluation criteria, supported by human judgment.",
+          "tr": "İnsan değerlendirmesiyle desteklenen, pozisyona özgü mülakatlar ve açık değerlendirme ölçütleri."
+        }
       },
       {
-        "title": { "en": "Organizational perspective", "tr": "Organizasyonel bakış" },
-        "body": { "en": "Recruitment considered alongside role design, workforce needs and long-term team development.", "tr": "Görev tasarımı, iş gücü ihtiyacı ve uzun vadeli ekip gelişimiyle birlikte ele alınan işe alım." }
+        "title": {
+          "en": "Organizational perspective",
+          "tr": "Organizasyonel bakış"
+        },
+        "body": {
+          "en": "Recruitment considered alongside role design, workforce needs and long-term team development.",
+          "tr": "Görev tasarımı, iş gücü ihtiyacı ve uzun vadeli ekip gelişimiyle birlikte ele alınan işe alım."
+        }
       }
     ]
   },
   "about": {
-    "title": { "en": "Sector knowledge meets people expertise.", "tr": "Sektör bilgisi, insan kaynakları uzmanlığıyla buluşuyor." },
+    "title": {
+      "en": "Sector knowledge meets people expertise.",
+      "tr": "Sektör bilgisi, insan kaynakları uzmanlığıyla buluşuyor."
+    },
     "body": {
       "en": "NUUK & Human focuses on the people requirements of financial markets, real estate and technical businesses. The model combines specialist recruitment with organizational development and practical HR support, helping employers define what they need and assess candidates against clear, relevant criteria.",
       "tr": "NUUK & Human; finansal piyasalar, gayrimenkul ve teknik işletmelerin insan kaynağı ihtiyaçlarına odaklanır. Uzman işe alımını organizasyonel gelişim ve uygulamaya dönük İK desteğiyle birleştiren model, işverenlerin ihtiyaçlarını tanımlamasını ve adayları açık, işle ilgili ölçütlerle değerlendirmesini esas alır."
     },
-    "mission_label": { "en": "Mission", "tr": "Misyon" },
+    "mission_label": {
+      "en": "Mission",
+      "tr": "Misyon"
+    },
     "mission": {
       "en": "Help organizations make informed hiring decisions and build effective people processes.",
       "tr": "Kurumların bilgiye dayalı işe alım kararları almasına ve etkili insan kaynakları süreçleri kurmasına destek olmak."
     },
-    "values_label": { "en": "What we hold to", "tr": "Bağlı kaldığımız ilkeler" },
+    "values_label": {
+      "en": "What we hold to",
+      "tr": "Bağlı kaldığımız ilkeler"
+    },
     "values": [
-      { "en": "Confidentiality", "tr": "Gizlilik" },
-      { "en": "Clarity", "tr": "Açıklık" },
-      { "en": "Sector expertise", "tr": "Sektörel uzmanlık" },
-      { "en": "Accountability", "tr": "Sorumluluk" },
-      { "en": "Respect for candidates", "tr": "Adaylara saygı" }
+      {
+        "en": "Confidentiality",
+        "tr": "Gizlilik"
+      },
+      {
+        "en": "Clarity",
+        "tr": "Açıklık"
+      },
+      {
+        "en": "Sector expertise",
+        "tr": "Sektörel uzmanlık"
+      },
+      {
+        "en": "Accountability",
+        "tr": "Sorumluluk"
+      },
+      {
+        "en": "Respect for candidates",
+        "tr": "Adaylara saygı"
+      }
     ],
-    "founders_title": { "en": "The founders", "tr": "Kurucular" },
+    "founders_title": {
+      "en": "The founders",
+      "tr": "Kurucular"
+    },
     "founders": [
       {
         "name": "Burcu Şarlı Öztürk",
         "initials": "BŞÖ",
-        "title": { "en": "Co-Founder", "tr": "Kurucu Ortak" },
-        "remit": { "en": "Talent Acquisition & HR Advisory", "tr": "Yetenek Kazanımı ve İK Danışmanlığı" },
+        "title": {
+          "en": "Co-Founder",
+          "tr": "Kurucu Ortak"
+        },
+        "remit": {
+          "en": "Talent Acquisition & HR Advisory",
+          "tr": "Yetenek Kazanımı ve İK Danışmanlığı"
+        },
         "bio": {
           "en": "HR professional with over a decade of experience in recruitment, talent management, organizational development and HR operations. Her background includes healthcare distribution, diversified group companies and international consulting projects.",
           "tr": "İşe alım, yetenek yönetimi, organizasyonel gelişim ve İK operasyonlarında on yılı aşkın deneyime sahip insan kaynakları profesyoneli. Geçmişi; sağlık dağıtımı, farklı sektörlerde faaliyet gösteren grup şirketleri ve uluslararası danışmanlık projelerini kapsar."
         },
         "responsibilities": {
-          "en": ["Recruitment methodology and candidate assessment", "Client HR advisory and organizational design", "Talent management and delivery quality"],
-          "tr": ["İşe alım metodolojisi ve aday değerlendirme", "Müşterilere İK danışmanlığı ve organizasyon tasarımı", "Yetenek yönetimi ve hizmet kalitesi"]
+          "en": [
+            "Recruitment methodology and candidate assessment",
+            "Client HR advisory and organizational design",
+            "Talent management and delivery quality"
+          ],
+          "tr": [
+            "İşe alım metodolojisi ve aday değerlendirme",
+            "Müşterilere İK danışmanlığı ve organizasyon tasarımı",
+            "Yetenek yönetimi ve hizmet kalitesi"
+          ]
         },
         "portrait": null,
         "linkedin": null
@@ -128,189 +288,561 @@
       {
         "name": "Ahmet Şahin Öztürk",
         "initials": "AŞÖ",
-        "title": { "en": "Co-Founder", "tr": "Kurucu Ortak" },
-        "remit": { "en": "Business Development & Strategy", "tr": "İş Geliştirme ve Strateji" },
+        "title": {
+          "en": "Co-Founder",
+          "tr": "Kurucu Ortak"
+        },
+        "remit": {
+          "en": "Business Development & Strategy",
+          "tr": "İş Geliştirme ve Strateji"
+        },
         "bio": {
           "en": "Economist with experience across financial markets, portfolio management and real estate. His role within NUUK & Human focuses on client relationships, sector insight, partnerships and commercial strategy.",
           "tr": "Finansal piyasalar, portföy yönetimi ve gayrimenkul alanlarında deneyime sahip ekonomist. NUUK & Human'daki odağı; müşteri ilişkileri, sektör bilgisi, iş ortaklıkları ve ticari stratejidir."
         },
         "responsibilities": {
-          "en": ["Client acquisition and partnerships", "Commercial strategy and financial planning", "Sector research and technology enablement"],
-          "tr": ["Müşteri kazanımı ve iş ortaklıkları", "Ticari strateji ve finansal planlama", "Sektör araştırması ve teknoloji kullanımı"]
+          "en": [
+            "Client acquisition and partnerships",
+            "Commercial strategy and financial planning",
+            "Sector research and technology enablement"
+          ],
+          "tr": [
+            "Müşteri kazanımı ve iş ortaklıkları",
+            "Ticari strateji ve finansal planlama",
+            "Sektör araştırması ve teknoloji kullanımı"
+          ]
         },
         "portrait": null,
         "linkedin": null
       }
     ],
-    "founder_track_record": { "display_by_default": false }
+    "founder_track_record": {
+      "display_by_default": false
+    }
   },
   "sectors_intro": {
-    "title": { "en": "Where we focus", "tr": "Odaklandığımız alanlar" },
+    "title": {
+      "en": "Where we focus",
+      "tr": "Odaklandığımız alanlar"
+    },
     "body": {
       "en": "Three primary sectors, each assessed against the capabilities that matter in that market.",
       "tr": "Her biri o piyasada önem taşıyan yetkinliklere göre değerlendirilen üç ana sektör."
     },
-    "roles_label": { "en": "Typical roles", "tr": "Örnek pozisyonlar" },
-    "clients_label": { "en": "Who we work with", "tr": "Kimlerle çalışıyoruz" },
-    "assessment_label": { "en": "What we assess", "tr": "Neyi değerlendiriyoruz" }
+    "roles_label": {
+      "en": "Typical roles",
+      "tr": "Örnek pozisyonlar"
+    },
+    "clients_label": {
+      "en": "Who we work with",
+      "tr": "Kimlerle çalışıyoruz"
+    },
+    "assessment_label": {
+      "en": "What we assess",
+      "tr": "Neyi değerlendiriyoruz"
+    }
   },
   "sectors": [
     {
       "id": "financial-markets",
-      "title": { "en": "Financial Markets", "tr": "Finansal Piyasalar" },
+      "title": {
+        "en": "Financial Markets",
+        "tr": "Finansal Piyasalar"
+      },
       "description": {
         "en": "Specialist talent for the commercial, risk, compliance, technology and operational functions of financial businesses.",
         "tr": "Finans şirketlerinin satış, risk, uyum, teknoloji ve operasyon fonksiyonları için uzman insan kaynağı."
       },
-      "client_types": { "en": ["Brokerage firms", "Fintech companies", "Asset managers", "Payment institutions"], "tr": ["Aracı kurumlar", "Fintech şirketleri", "Varlık yönetim şirketleri", "Ödeme kuruluşları"] },
-      "roles": ["Relationship Manager", "Institutional Sales", "Risk Analyst", "Compliance / AML Specialist", "Trading Operations Specialist", "Quant Developer"],
+      "client_types": {
+        "en": [
+          "Brokerage firms",
+          "Fintech companies",
+          "Asset managers",
+          "Payment institutions"
+        ],
+        "tr": [
+          "Aracı kurumlar",
+          "Fintech şirketleri",
+          "Varlık yönetim şirketleri",
+          "Ödeme kuruluşları"
+        ]
+      },
+      "roles": [
+        "Relationship Manager",
+        "Institutional Sales",
+        "Risk Analyst",
+        "Compliance / AML Specialist",
+        "Trading Operations Specialist",
+        "Quant Developer"
+      ],
       "assessment_focus": {
-        "en": ["Product and market knowledge", "Risk and compliance awareness", "Commercial capability", "Operational and technical competence"],
-        "tr": ["Ürün ve piyasa bilgisi", "Risk ve uyum farkındalığı", "Ticari yetkinlik", "Operasyonel ve teknik yeterlilik"]
+        "en": [
+          "Product and market knowledge",
+          "Risk and compliance awareness",
+          "Commercial capability",
+          "Operational and technical competence"
+        ],
+        "tr": [
+          "Ürün ve piyasa bilgisi",
+          "Risk ve uyum farkındalığı",
+          "Ticari yetkinlik",
+          "Operasyonel ve teknik yeterlilik"
+        ]
       }
     },
     {
       "id": "real-estate",
-      "title": { "en": "Real Estate", "tr": "Gayrimenkul" },
+      "title": {
+        "en": "Real Estate",
+        "tr": "Gayrimenkul"
+      },
       "description": {
         "en": "Recruitment for property developers, brokerage businesses, investment teams and property management companies.",
         "tr": "Gayrimenkul geliştiricileri, broker şirketleri, yatırım ekipleri ve mülk yönetim şirketleri için işe alım."
       },
-      "client_types": { "en": ["Property developers", "Real estate brokerages", "Property investment businesses", "Property management companies"], "tr": ["Gayrimenkul geliştiricileri", "Gayrimenkul broker şirketleri", "Gayrimenkul yatırım şirketleri", "Mülk yönetim şirketleri"] },
-      "roles": ["Sales Manager", "Investment Analyst", "CRM Manager", "Property Manager", "Finance Manager"],
+      "client_types": {
+        "en": [
+          "Property developers",
+          "Real estate brokerages",
+          "Property investment businesses",
+          "Property management companies"
+        ],
+        "tr": [
+          "Gayrimenkul geliştiricileri",
+          "Gayrimenkul broker şirketleri",
+          "Gayrimenkul yatırım şirketleri",
+          "Mülk yönetim şirketleri"
+        ]
+      },
+      "roles": [
+        "Sales Manager",
+        "Investment Analyst",
+        "CRM Manager",
+        "Property Manager",
+        "Finance Manager"
+      ],
       "assessment_focus": {
-        "en": ["Market understanding", "Sales process and CRM discipline", "Client relationship management", "Investment and operational analysis"],
-        "tr": ["Piyasa bilgisi", "Satış süreci ve CRM disiplini", "Müşteri ilişkileri yönetimi", "Yatırım ve operasyon analizi"]
+        "en": [
+          "Market understanding",
+          "Sales process and CRM discipline",
+          "Client relationship management",
+          "Investment and operational analysis"
+        ],
+        "tr": [
+          "Piyasa bilgisi",
+          "Satış süreci ve CRM disiplini",
+          "Müşteri ilişkileri yönetimi",
+          "Yatırım ve operasyon analizi"
+        ]
       }
     },
     {
       "id": "technical",
-      "title": { "en": "Technical Sectors", "tr": "Teknik Sektörler" },
+      "title": {
+        "en": "Technical Sectors",
+        "tr": "Teknik Sektörler"
+      },
       "description": {
         "en": "Role-specific recruitment for technology, engineering and specialist operational teams, with an initial focus on fintech and proptech.",
         "tr": "Başlangıçta fintech ve proptech odağıyla teknoloji, mühendislik ve uzman operasyon ekiplerine yönelik pozisyona özgü işe alım."
       },
-      "client_types": { "en": ["Fintech infrastructure businesses", "Proptech companies", "Engineering firms", "Technical service providers"], "tr": ["Fintech altyapı şirketleri", "Proptech şirketleri", "Mühendislik firmaları", "Teknik hizmet sağlayıcılar"] },
-      "roles": ["Software Engineer", "Data Engineer", "Cybersecurity Specialist", "BIM Specialist", "Project Engineer"],
+      "client_types": {
+        "en": [
+          "Fintech infrastructure businesses",
+          "Proptech companies",
+          "Engineering firms",
+          "Technical service providers"
+        ],
+        "tr": [
+          "Fintech altyapı şirketleri",
+          "Proptech şirketleri",
+          "Mühendislik firmaları",
+          "Teknik hizmet sağlayıcılar"
+        ]
+      },
+      "roles": [
+        "Software Engineer",
+        "Data Engineer",
+        "Cybersecurity Specialist",
+        "BIM Specialist",
+        "Project Engineer"
+      ],
       "assessment_focus": {
-        "en": ["Role-specific technical requirements", "Relevant project experience", "Problem-solving approach", "Specialist assessment where needed"],
-        "tr": ["Pozisyona özgü teknik gereklilikler", "İlgili proje deneyimi", "Problem çözme yaklaşımı", "Gerektiğinde uzman değerlendirmesi"]
+        "en": [
+          "Role-specific technical requirements",
+          "Relevant project experience",
+          "Problem-solving approach",
+          "Specialist assessment where needed"
+        ],
+        "tr": [
+          "Pozisyona özgü teknik gereklilikler",
+          "İlgili proje deneyimi",
+          "Problem çözme yaklaşımı",
+          "Gerektiğinde uzman değerlendirmesi"
+        ]
       }
     },
     {
       "id": "other",
-      "title": { "en": "Additional Functions", "tr": "Diğer Fonksiyonlar" },
+      "title": {
+        "en": "Additional Functions",
+        "tr": "Diğer Fonksiyonlar"
+      },
       "description": {
         "en": "Selected assignments in finance, HR, operations and supply chain, aligned with client needs and our delivery capacity.",
         "tr": "Müşteri ihtiyacı ve hizmet kapasitesiyle uyumlu finans, İK, operasyon ve tedarik zinciri pozisyonlarında seçili işe alım projeleri."
       },
       "client_types": null,
       "roles": null,
-      "role_families": { "en": ["Finance", "Human Resources", "Operations", "Supply Chain"], "tr": ["Finans", "İnsan Kaynakları", "Operasyon", "Tedarik Zinciri"] },
+      "role_families": {
+        "en": [
+          "Finance",
+          "Human Resources",
+          "Operations",
+          "Supply Chain"
+        ],
+        "tr": [
+          "Finans",
+          "İnsan Kaynakları",
+          "Operasyon",
+          "Tedarik Zinciri"
+        ]
+      },
       "assessment_focus": null
     }
   ],
   "services_intro": {
-    "title": { "en": "Recruitment and HR, under one roof.", "tr": "İşe alım ve İK, tek çatı altında." },
+    "title": {
+      "en": "Recruitment and HR, under one roof.",
+      "tr": "İşe alım ve İK, tek çatı altında."
+    },
     "body": {
       "en": "Engagements are scoped in writing. Pick a single assignment or an ongoing arrangement.",
       "tr": "Her çalışma yazılı olarak kapsamlandırılır. Tek bir proje ya da sürekli bir iş birliği seçebilirsiniz."
     },
     "groups": [
-      { "id": "recruitment", "label": { "en": "Recruitment", "tr": "İşe alım" }, "items": ["specialist-recruitment", "executive-search", "recruitment-support"] },
-      { "id": "hr", "label": { "en": "HR advisory", "tr": "İK danışmanlığı" }, "items": ["hr-partner", "organization-design", "payroll-administration"] }
+      {
+        "id": "recruitment",
+        "label": {
+          "en": "Recruitment",
+          "tr": "İşe alım"
+        },
+        "items": [
+          "specialist-recruitment",
+          "executive-search",
+          "recruitment-support"
+        ]
+      },
+      {
+        "id": "hr",
+        "label": {
+          "en": "HR advisory",
+          "tr": "İK danışmanlığı"
+        },
+        "items": [
+          "hr-partner",
+          "organization-design",
+          "payroll-administration"
+        ]
+      }
     ],
-    "deliverables_label": { "en": "What is included", "tr": "Kapsam" }
+    "deliverables_label": {
+      "en": "What is included",
+      "tr": "Kapsam"
+    }
   },
   "services": [
     {
       "id": "specialist-recruitment",
-      "name": { "en": "Specialist Recruitment", "tr": "Uzman İşe Alımı" },
-      "summary": { "en": "End-to-end recruitment for specialist and management roles.", "tr": "Uzman ve yönetici pozisyonları için uçtan uca işe alım." },
+      "name": {
+        "en": "Specialist Recruitment",
+        "tr": "Uzman İşe Alımı"
+      },
+      "summary": {
+        "en": "End-to-end recruitment for specialist and management roles.",
+        "tr": "Uzman ve yönetici pozisyonları için uçtan uca işe alım."
+      },
       "deliverables": {
-        "en": ["Hiring brief and role definition", "Candidate research and sourcing", "Structured interviews and shortlist", "Reference coordination and offer management", "Onboarding follow-up"],
-        "tr": ["İhtiyaç analizi ve pozisyon tanımı", "Aday araştırması ve kaynak geliştirme", "Yapılandırılmış mülakat ve kısa liste", "Referans koordinasyonu ve teklif yönetimi", "İşe başlangıç takibi"]
+        "en": [
+          "Hiring brief and role definition",
+          "Candidate research and sourcing",
+          "Structured interviews and shortlist",
+          "Reference coordination and offer management",
+          "Onboarding follow-up"
+        ],
+        "tr": [
+          "İhtiyaç analizi ve pozisyon tanımı",
+          "Aday araştırması ve kaynak geliştirme",
+          "Yapılandırılmış mülakat ve kısa liste",
+          "Referans koordinasyonu ve teklif yönetimi",
+          "İşe başlangıç takibi"
+        ]
       }
     },
     {
       "id": "executive-search",
-      "name": { "en": "Executive Search", "tr": "Yönetici Araştırması" },
-      "summary": { "en": "Focused, confidential research and assessment for leadership appointments.", "tr": "Liderlik pozisyonları için odaklı ve gizlilik esaslı araştırma ve değerlendirme." },
+      "name": {
+        "en": "Executive Search",
+        "tr": "Yönetici Araştırması"
+      },
+      "summary": {
+        "en": "Focused, confidential research and assessment for leadership appointments.",
+        "tr": "Liderlik pozisyonları için odaklı ve gizlilik esaslı araştırma ve değerlendirme."
+      },
       "deliverables": {
-        "en": ["Leadership brief", "Target-company and candidate research", "Competency interviews", "Candidate assessment reports", "Offer and transition coordination"],
-        "tr": ["Liderlik rolü ihtiyaç analizi", "Hedef şirket ve aday araştırması", "Yetkinlik mülakatları", "Aday değerlendirme raporları", "Teklif ve geçiş koordinasyonu"]
+        "en": [
+          "Leadership brief",
+          "Target-company and candidate research",
+          "Competency interviews",
+          "Candidate assessment reports",
+          "Offer and transition coordination"
+        ],
+        "tr": [
+          "Liderlik rolü ihtiyaç analizi",
+          "Hedef şirket ve aday araştırması",
+          "Yetkinlik mülakatları",
+          "Aday değerlendirme raporları",
+          "Teklif ve geçiş koordinasyonu"
+        ]
       }
     },
     {
       "id": "recruitment-support",
-      "name": { "en": "Dedicated Recruitment Support", "tr": "Dış Kaynak İşe Alım Desteği" },
-      "summary": { "en": "A defined recruitment capacity for businesses with recurring hiring needs.", "tr": "Düzenli işe alım ihtiyacı olan işletmeler için kapsamı belirlenmiş işe alım desteği." },
+      "name": {
+        "en": "Dedicated Recruitment Support",
+        "tr": "Dış Kaynak İşe Alım Desteği"
+      },
+      "summary": {
+        "en": "A defined recruitment capacity for businesses with recurring hiring needs.",
+        "tr": "Düzenli işe alım ihtiyacı olan işletmeler için kapsamı belirlenmiş işe alım desteği."
+      },
       "deliverables": {
-        "en": ["Agreed active-vacancy capacity", "Candidate pipeline management", "Interview coordination", "Hiring-manager feedback", "Progress reporting"],
-        "tr": ["Mutabık kalınan aktif pozisyon kapasitesi", "Aday havuzunun yönetimi", "Mülakat koordinasyonu", "İşe alım yöneticisi geri bildirimi", "İlerleme raporlaması"]
+        "en": [
+          "Agreed active-vacancy capacity",
+          "Candidate pipeline management",
+          "Interview coordination",
+          "Hiring-manager feedback",
+          "Progress reporting"
+        ],
+        "tr": [
+          "Mutabık kalınan aktif pozisyon kapasitesi",
+          "Aday havuzunun yönetimi",
+          "Mülakat koordinasyonu",
+          "İşe alım yöneticisi geri bildirimi",
+          "İlerleme raporlaması"
+        ]
       }
     },
     {
       "id": "hr-partner",
-      "name": { "en": "HR Partner", "tr": "İK İş Ortağı" },
-      "summary": { "en": "Ongoing HR support tailored to the size and needs of the organization.", "tr": "Organizasyonun büyüklüğüne ve ihtiyaçlarına göre düzenlenen sürekli İK desteği." },
+      "name": {
+        "en": "HR Partner",
+        "tr": "İK İş Ortağı"
+      },
+      "summary": {
+        "en": "Ongoing HR support tailored to the size and needs of the organization.",
+        "tr": "Organizasyonun büyüklüğüne ve ihtiyaçlarına göre düzenlenen sürekli İK desteği."
+      },
       "deliverables": {
-        "en": ["Employee lifecycle administration", "Onboarding and offboarding coordination", "Employee records and leave tracking", "Management reporting", "Defined monthly advisory support"],
-        "tr": ["Çalışan yaşam döngüsü yönetimi", "İşe giriş ve işten çıkış koordinasyonu", "Özlük kayıtları ve izin takibi", "Yönetim raporlaması", "Tanımlı aylık danışmanlık desteği"]
+        "en": [
+          "Employee lifecycle administration",
+          "Onboarding and offboarding coordination",
+          "Employee records and leave tracking",
+          "Management reporting",
+          "Defined monthly advisory support"
+        ],
+        "tr": [
+          "Çalışan yaşam döngüsü yönetimi",
+          "İşe giriş ve işten çıkış koordinasyonu",
+          "Özlük kayıtları ve izin takibi",
+          "Yönetim raporlaması",
+          "Tanımlı aylık danışmanlık desteği"
+        ]
       }
     },
     {
       "id": "organization-design",
-      "name": { "en": "HR Setup & Organizational Development", "tr": "İK Kurulumu ve Organizasyonel Gelişim" },
-      "summary": { "en": "Practical structures and processes that connect people decisions with business needs.", "tr": "İnsan kaynağı kararlarını iş ihtiyaçlarıyla birleştiren uygulanabilir yapı ve süreçler." },
+      "name": {
+        "en": "HR Setup & Organizational Development",
+        "tr": "İK Kurulumu ve Organizasyonel Gelişim"
+      },
+      "summary": {
+        "en": "Practical structures and processes that connect people decisions with business needs.",
+        "tr": "İnsan kaynağı kararlarını iş ihtiyaçlarıyla birleştiren uygulanabilir yapı ve süreçler."
+      },
       "deliverables": {
-        "en": ["Organizational charts", "Job analysis and job descriptions", "Workforce and workload planning", "Talent assessment and succession planning", "Performance management frameworks"],
-        "tr": ["Organizasyon şemaları", "İş analizi ve görev tanımları", "İş gücü ve iş yükü planlaması", "Yetenek değerlendirme ve yedekleme planlaması", "Performans yönetimi sistemleri"]
+        "en": [
+          "Organizational charts",
+          "Job analysis and job descriptions",
+          "Workforce and workload planning",
+          "Talent assessment and succession planning",
+          "Performance management frameworks"
+        ],
+        "tr": [
+          "Organizasyon şemaları",
+          "İş analizi ve görev tanımları",
+          "İş gücü ve iş yükü planlaması",
+          "Yetenek değerlendirme ve yedekleme planlaması",
+          "Performans yönetimi sistemleri"
+        ]
       }
     },
     {
       "id": "payroll-administration",
-      "name": { "en": "Payroll Administration Support", "tr": "Bordro Yönetimi Desteği" },
-      "summary": { "en": "Payroll preparation and review workflows while the client remains the employer.", "tr": "Müşterinin işveren olarak kaldığı yapıda bordro hazırlığı ve kontrol süreçleri." },
+      "name": {
+        "en": "Payroll Administration Support",
+        "tr": "Bordro Yönetimi Desteği"
+      },
+      "summary": {
+        "en": "Payroll preparation and review workflows while the client remains the employer.",
+        "tr": "Müşterinin işveren olarak kaldığı yapıda bordro hazırlığı ve kontrol süreçleri."
+      },
       "deliverables": {
-        "en": ["Attendance and leave input coordination", "Payroll calculation and file preparation", "Documented review and approval workflows", "Client-authorized payment coordination", "Payroll reporting"],
-        "tr": ["Puantaj ve izin verilerinin koordinasyonu", "Bordro hesaplama ve dosya hazırlığı", "Kayıtlı kontrol ve onay akışları", "Müşteri yetkilendirmesiyle ödeme koordinasyonu", "Bordro raporlaması"]
+        "en": [
+          "Attendance and leave input coordination",
+          "Payroll calculation and file preparation",
+          "Documented review and approval workflows",
+          "Client-authorized payment coordination",
+          "Payroll reporting"
+        ],
+        "tr": [
+          "Puantaj ve izin verilerinin koordinasyonu",
+          "Bordro hesaplama ve dosya hazırlığı",
+          "Kayıtlı kontrol ve onay akışları",
+          "Müşteri yetkilendirmesiyle ödeme koordinasyonu",
+          "Bordro raporlaması"
+        ]
       }
     }
   ],
-  "process_title": { "en": "From brief to first day", "tr": "İhtiyaçtan ilk iş gününe" },
+  "process_title": {
+    "en": "From brief to first day",
+    "tr": "İhtiyaçtan ilk iş gününe"
+  },
   "process": [
-    { "step": 1, "title": { "en": "We define the requirement", "tr": "İhtiyacı tanımlıyoruz" }, "body": { "en": "Role scope, business priorities, compensation and decision criteria.", "tr": "Pozisyon kapsamı, iş öncelikleri, ücret yapısı ve karar ölçütleri." } },
-    { "step": 2, "title": { "en": "We agree the assignment", "tr": "Projeyi netleştiriyoruz" }, "body": { "en": "Deliverables, fees, responsibilities and timelines, in writing.", "tr": "Teslimatlar, ücret, sorumluluklar ve takvim; yazılı olarak." } },
-    { "step": 3, "title": { "en": "We research and assess", "tr": "Araştırıyor ve değerlendiriyoruz" }, "body": { "en": "Candidates are sourced and assessed against the agreed role criteria.", "tr": "Adaylar araştırılır ve belirlenen pozisyon ölçütlerine göre değerlendirilir." } },
-    { "step": 4, "title": { "en": "We present the shortlist", "tr": "Kısa listeyi sunuyoruz" }, "body": { "en": "A focused shortlist with structured candidate assessments.", "tr": "Yapılandırılmış aday değerlendirmeleriyle odaklı bir kısa liste." } },
-    { "step": 5, "title": { "en": "We coordinate selection", "tr": "Seçimi koordine ediyoruz" }, "body": { "en": "Interview feedback, references and the offer process.", "tr": "Mülakat geri bildirimi, referanslar ve teklif süreci." } },
-    { "step": 6, "title": { "en": "We support the transition", "tr": "Geçişi destekliyoruz" }, "body": { "en": "Follow-up on the start date and early integration.", "tr": "İşe başlama ve ilk dönem uyumunun takibi." } }
+    {
+      "step": 1,
+      "title": {
+        "en": "We define the requirement",
+        "tr": "İhtiyacı tanımlıyoruz"
+      },
+      "body": {
+        "en": "Role scope, business priorities, compensation and decision criteria.",
+        "tr": "Pozisyon kapsamı, iş öncelikleri, ücret yapısı ve karar ölçütleri."
+      }
+    },
+    {
+      "step": 2,
+      "title": {
+        "en": "We agree the assignment",
+        "tr": "Projeyi netleştiriyoruz"
+      },
+      "body": {
+        "en": "Deliverables, fees, responsibilities and timelines, in writing.",
+        "tr": "Teslimatlar, ücret, sorumluluklar ve takvim; yazılı olarak."
+      }
+    },
+    {
+      "step": 3,
+      "title": {
+        "en": "We research and assess",
+        "tr": "Araştırıyor ve değerlendiriyoruz"
+      },
+      "body": {
+        "en": "Candidates are sourced and assessed against the agreed role criteria.",
+        "tr": "Adaylar araştırılır ve belirlenen pozisyon ölçütlerine göre değerlendirilir."
+      }
+    },
+    {
+      "step": 4,
+      "title": {
+        "en": "We present the shortlist",
+        "tr": "Kısa listeyi sunuyoruz"
+      },
+      "body": {
+        "en": "A focused shortlist with structured candidate assessments.",
+        "tr": "Yapılandırılmış aday değerlendirmeleriyle odaklı bir kısa liste."
+      }
+    },
+    {
+      "step": 5,
+      "title": {
+        "en": "We coordinate selection",
+        "tr": "Seçimi koordine ediyoruz"
+      },
+      "body": {
+        "en": "Interview feedback, references and the offer process.",
+        "tr": "Mülakat geri bildirimi, referanslar ve teklif süreci."
+      }
+    },
+    {
+      "step": 6,
+      "title": {
+        "en": "We support the transition",
+        "tr": "Geçişi destekliyoruz"
+      },
+      "body": {
+        "en": "Follow-up on the start date and early integration.",
+        "tr": "İşe başlama ve ilk dönem uyumunun takibi."
+      }
+    }
   ],
   "employers": {
-    "kicker": { "en": "For employers", "tr": "İşverenler için" },
-    "headline": { "en": "Tell us who your business needs next.", "tr": "İşinizin ihtiyaç duyduğu bir sonraki uzmanı konuşalım." },
+    "kicker": {
+      "en": "For employers",
+      "tr": "İşverenler için"
+    },
+    "headline": {
+      "en": "Tell us who your business needs next.",
+      "tr": "İşinizin ihtiyaç duyduğu bir sonraki uzmanı konuşalım."
+    },
     "body": {
       "en": "Share the role, business context and hiring priorities. We will help define an appropriate recruitment or HR advisory scope.",
       "tr": "Pozisyonu, iş bağlamını ve işe alım önceliklerinizi paylaşın. Uygun işe alım veya İK danışmanlığı kapsamını birlikte tanımlayalım."
     },
-    "expect_title": { "en": "What happens next", "tr": "Sonraki adımlar" },
+    "expect_title": {
+      "en": "What happens next",
+      "tr": "Sonraki adımlar"
+    },
     "expect": {
-      "en": ["We review your inquiry and reply to arrange an initial conversation.", "We agree scope, deliverables and commercial terms in a written proposal.", "The assignment starts only once the proposal is accepted."],
-      "tr": ["Talebinizi inceler, ilk görüşmeyi planlamak için size dönüş yaparız.", "Kapsam, teslimatlar ve ticari koşulları yazılı bir teklifte netleştiririz.", "Proje yalnızca teklif kabul edildikten sonra başlar."]
+      "en": [
+        "We review your inquiry and reply to arrange an initial conversation.",
+        "We agree scope, deliverables and commercial terms in a written proposal.",
+        "The assignment starts only once the proposal is accepted."
+      ],
+      "tr": [
+        "Talebinizi inceler, ilk görüşmeyi planlamak için size dönüş yaparız.",
+        "Kapsam, teslimatlar ve ticari koşulları yazılı bir teklifte netleştiririz.",
+        "Proje yalnızca teklif kabul edildikten sonra başlar."
+      ]
     },
     "form_id": "employer-inquiry"
   },
   "candidates": {
-    "kicker": { "en": "For candidates", "tr": "Adaylar için" },
-    "headline": { "en": "Bring your experience into the right conversation.", "tr": "Deneyiminizi doğru fırsatlarla buluşturun." },
+    "kicker": {
+      "en": "For candidates",
+      "tr": "Adaylar için"
+    },
+    "headline": {
+      "en": "Bring your experience into the right conversation.",
+      "tr": "Deneyiminizi doğru fırsatlarla buluşturun."
+    },
     "body": {
       "en": "Share your professional profile and areas of interest for consideration against relevant assignments.",
       "tr": "İlgili projelerde değerlendirilmek üzere mesleki profilinizi ve ilgi alanlarınızı paylaşın."
     },
-    "fee_statement": { "en": "Candidates are never charged recruitment or placement fees.", "tr": "Adaylardan hiçbir koşulda işe alım veya yerleştirme ücreti alınmaz." },
-    "expectations": { "en": "Submitting a profile does not guarantee an interview or placement.", "tr": "Profil paylaşımı mülakat veya işe yerleştirme garantisi değildir." },
-    "vacancies_title": { "en": "Open positions", "tr": "Açık pozisyonlar" },
+    "fee_statement": {
+      "en": "Candidates are never charged recruitment or placement fees.",
+      "tr": "Adaylardan hiçbir koşulda işe alım veya yerleştirme ücreti alınmaz."
+    },
+    "expectations": {
+      "en": "Submitting a profile does not guarantee an interview or placement.",
+      "tr": "Profil paylaşımı mülakat veya işe yerleştirme garantisi değildir."
+    },
+    "vacancies_title": {
+      "en": "Open positions",
+      "tr": "Açık pozisyonlar"
+    },
     "vacancies": {
       "enabled": false,
       "items": [],
@@ -322,117 +854,759 @@
     "form_id": "candidate-profile"
   },
   "fraud_notice": {
-    "title": { "en": "Protect yourself from recruitment scams", "tr": "İşe alım dolandırıcılığına karşı dikkatli olun" },
+    "title": {
+      "en": "Protect yourself from recruitment scams",
+      "tr": "İşe alım dolandırıcılığına karşı dikkatli olun"
+    },
     "body": {
       "en": "NUUK & Human never asks candidates for payment, visa fees, deposits or bank details at any stage. If someone claims to represent us and asks for money, do not pay and do not share personal documents.",
       "tr": "NUUK & Human hiçbir aşamada adaylardan ödeme, vize ücreti, depozito veya banka bilgisi talep etmez. Bizim adımıza para isteyen biriyle karşılaşırsanız ödeme yapmayın ve kişisel belge paylaşmayın."
     }
   },
   "contact": {
-    "headline": { "en": "Start with the route that fits.", "tr": "Size uyan yoldan başlayın." },
+    "headline": {
+      "en": "Start with the route that fits.",
+      "tr": "Size uyan yoldan başlayın."
+    },
     "body": {
       "en": "Employer inquiries and candidate profiles are handled separately, so each reaches the right person with the right level of confidentiality.",
       "tr": "İşveren talepleri ve aday profilleri ayrı yürütülür; böylece her biri doğru kişiye, doğru gizlilik düzeyiyle ulaşır."
     },
     "details_pending": {
-      "en": "Direct contact details will be published here once our Dubai entity and business lines are active.",
-      "tr": "Doğrudan iletişim bilgileri, Dubai şirketimiz ve iş hatlarımız aktif olduğunda burada yayımlanacaktır."
+      "en": "Direct contact details will be published here soon.",
+      "tr": "Doğrudan iletişim bilgileri yakında burada yayımlanacak."
     }
   },
   "forms": {
     "labels": {
-      "required": { "en": "required", "tr": "zorunlu" },
-      "optional": { "en": "optional", "tr": "isteğe bağlı" },
-      "select_placeholder": { "en": "Select…", "tr": "Seçiniz…" },
-      "sector": { "en": "Sector", "tr": "Sektör" },
-      "service": { "en": "Service of interest", "tr": "İlgilendiğiniz hizmet" },
-      "offline_title": { "en": "Online submissions open soon", "tr": "Çevrimiçi başvurular yakında açılıyor" },
+      "required": {
+        "en": "required",
+        "tr": "zorunlu"
+      },
+      "optional": {
+        "en": "optional",
+        "tr": "isteğe bağlı"
+      },
+      "select_placeholder": {
+        "en": "Select…",
+        "tr": "Seçiniz…"
+      },
+      "sector": {
+        "en": "Sector",
+        "tr": "Sektör"
+      },
+      "service": {
+        "en": "Service of interest",
+        "tr": "İlgilendiğiniz hizmet"
+      },
+      "offline_title": {
+        "en": "Online submissions open soon",
+        "tr": "Çevrimiçi başvurular yakında açılıyor"
+      },
       "offline_body": {
         "en": "Our secure intake system is being set up. The form is shown so you can see what we will ask; it cannot be submitted yet.",
         "tr": "Güvenli başvuru altyapımız kuruluyor. Hangi bilgileri isteyeceğimizi görebilmeniz için form gösteriliyor; henüz gönderilemez."
       },
-      "sending": { "en": "Sending…", "tr": "Gönderiliyor…" },
-      "success": { "en": "Thank you. Your submission was received.", "tr": "Teşekkürler. Başvurunuz alındı." },
-      "error": { "en": "Something went wrong and your submission was not sent. Please try again later.", "tr": "Bir sorun oluştu ve başvurunuz gönderilemedi. Lütfen daha sonra tekrar deneyin." },
-      "invalid": { "en": "Please check the highlighted fields.", "tr": "Lütfen işaretli alanları kontrol edin." },
-      "file_too_large": { "en": "The file must be 5 MB or smaller.", "tr": "Dosya en fazla 5 MB olmalıdır." },
-      "file_type": { "en": "Please upload a PDF or DOCX file.", "tr": "Lütfen PDF veya DOCX dosyası yükleyin." }
+      "sending": {
+        "en": "Sending…",
+        "tr": "Gönderiliyor…"
+      },
+      "success": {
+        "en": "Thank you. Your submission was received.",
+        "tr": "Teşekkürler. Başvurunuz alındı."
+      },
+      "error": {
+        "en": "Something went wrong and your submission was not sent. Please try again later.",
+        "tr": "Bir sorun oluştu ve başvurunuz gönderilemedi. Lütfen daha sonra tekrar deneyin."
+      },
+      "invalid": {
+        "en": "Please check the highlighted fields.",
+        "tr": "Lütfen işaretli alanları kontrol edin."
+      },
+      "file_too_large": {
+        "en": "The file must be 5 MB or smaller.",
+        "tr": "Dosya en fazla 5 MB olmalıdır."
+      },
+      "file_type": {
+        "en": "Please upload a PDF or DOCX file.",
+        "tr": "Lütfen PDF veya DOCX dosyası yükleyin."
+      },
+      "attach_cv": {
+        "en": "Your email app will open with these details. Please attach your CV (PDF or DOCX) to that email before sending.",
+        "tr": "Bilgilerinizle birlikte e-posta uygulamanız açılacak. Göndermeden önce CV'nizi (PDF veya DOCX) o e-postaya ekleyin."
+      },
+      "email_opened": {
+        "en": "Your email app should now be open with your details. Nothing is sent until you press send there.",
+        "tr": "E-posta uygulamanız bilgilerinizle açılmış olmalı. Oradan gönder'e basana kadar hiçbir şey iletilmez."
+      }
     },
     "items": [
       {
         "id": "employer-inquiry",
-        "submit_label": { "en": "Send Inquiry", "tr": "Talep Gönder" },
+        "submit_label": {
+          "en": "Send Inquiry",
+          "tr": "Talep Gönder"
+        },
         "fields": [
-          { "name": "name", "type": "text", "required": true, "autocomplete": "name", "label": { "en": "Full name", "tr": "Ad soyad" } },
-          { "name": "work_email", "type": "email", "required": true, "autocomplete": "email", "label": { "en": "Work email", "tr": "İş e-postası" } },
-          { "name": "company", "type": "text", "required": true, "autocomplete": "organization", "label": { "en": "Company", "tr": "Şirket" } },
-          { "name": "phone", "type": "tel", "required": false, "autocomplete": "tel", "label": { "en": "Phone", "tr": "Telefon" } },
-          { "name": "sector", "type": "select", "required": true, "source": "sectors" },
-          { "name": "service", "type": "select", "required": true, "source": "services" },
-          { "name": "role_or_need", "type": "textarea", "required": true, "maxlength": 3000, "label": { "en": "Role or business need", "tr": "Pozisyon veya iş ihtiyacı" } },
-          { "name": "salary_budget", "type": "text", "required": false, "label": { "en": "Salary or project budget", "tr": "Maaş veya proje bütçesi" } },
-          { "name": "timeline", "type": "text", "required": false, "label": { "en": "Target timeline", "tr": "Hedef takvim" } },
-          { "name": "privacy_acknowledgment", "type": "checkbox", "required": true, "label": { "en": "I have read the privacy notice.", "tr": "Gizlilik bildirimini okudum." }, "link": "/privacy/" }
+          {
+            "name": "name",
+            "type": "text",
+            "required": true,
+            "autocomplete": "name",
+            "label": {
+              "en": "Full name",
+              "tr": "Ad soyad"
+            }
+          },
+          {
+            "name": "work_email",
+            "type": "email",
+            "required": true,
+            "autocomplete": "email",
+            "label": {
+              "en": "Work email",
+              "tr": "İş e-postası"
+            }
+          },
+          {
+            "name": "company",
+            "type": "text",
+            "required": true,
+            "autocomplete": "organization",
+            "label": {
+              "en": "Company",
+              "tr": "Şirket"
+            }
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "required": false,
+            "autocomplete": "tel",
+            "label": {
+              "en": "Phone",
+              "tr": "Telefon"
+            }
+          },
+          {
+            "name": "sector",
+            "type": "select",
+            "required": true,
+            "source": "sectors"
+          },
+          {
+            "name": "service",
+            "type": "select",
+            "required": true,
+            "source": "services"
+          },
+          {
+            "name": "role_or_need",
+            "type": "textarea",
+            "required": true,
+            "maxlength": 3000,
+            "label": {
+              "en": "Role or business need",
+              "tr": "Pozisyon veya iş ihtiyacı"
+            }
+          },
+          {
+            "name": "salary_budget",
+            "type": "text",
+            "required": false,
+            "label": {
+              "en": "Salary or project budget",
+              "tr": "Maaş veya proje bütçesi"
+            }
+          },
+          {
+            "name": "timeline",
+            "type": "text",
+            "required": false,
+            "label": {
+              "en": "Target timeline",
+              "tr": "Hedef takvim"
+            }
+          },
+          {
+            "name": "privacy_acknowledgment",
+            "type": "checkbox",
+            "required": true,
+            "label": {
+              "en": "I have read the privacy notice.",
+              "tr": "Gizlilik bildirimini okudum."
+            },
+            "link": "/privacy/"
+          }
         ]
       },
       {
         "id": "candidate-profile",
-        "submit_label": { "en": "Submit Profile", "tr": "Profil Gönder" },
+        "submit_label": {
+          "en": "Submit Profile",
+          "tr": "Profil Gönder"
+        },
         "fields": [
-          { "name": "name", "type": "text", "required": true, "autocomplete": "name", "label": { "en": "Full name", "tr": "Ad soyad" } },
-          { "name": "email", "type": "email", "required": true, "autocomplete": "email", "label": { "en": "Email", "tr": "E-posta" } },
-          { "name": "phone", "type": "tel", "required": false, "autocomplete": "tel", "label": { "en": "Phone", "tr": "Telefon" } },
-          { "name": "current_location", "type": "text", "required": false, "autocomplete": "address-level2", "label": { "en": "Current location", "tr": "Mevcut konum" } },
-          { "name": "sector", "type": "select", "required": true, "source": "sectors" },
-          { "name": "target_role", "type": "text", "required": true, "label": { "en": "Target role", "tr": "Hedef pozisyon" } },
-          { "name": "linkedin", "type": "url", "required": false, "label": { "en": "LinkedIn profile", "tr": "LinkedIn profili" } },
-          { "name": "cv", "type": "file", "required": true, "accept": [".pdf", ".docx"], "max_size_mb": 5, "label": { "en": "Upload CV (PDF or DOCX, max 5 MB)", "tr": "CV yükle (PDF veya DOCX, en fazla 5 MB)" } },
-          { "name": "privacy_acknowledgment", "type": "checkbox", "required": true, "label": { "en": "I have read the candidate privacy notice.", "tr": "Aday gizlilik bildirimini okudum." }, "link": "/candidate-privacy/" },
-          { "name": "future_opportunities_opt_in", "type": "checkbox", "required": false, "label": { "en": "I would like my profile to be considered for future opportunities.", "tr": "Profilimin gelecekteki fırsatlar için değerlendirilmesini istiyorum." } }
+          {
+            "name": "name",
+            "type": "text",
+            "required": true,
+            "autocomplete": "name",
+            "label": {
+              "en": "Full name",
+              "tr": "Ad soyad"
+            }
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "required": true,
+            "autocomplete": "email",
+            "label": {
+              "en": "Email",
+              "tr": "E-posta"
+            }
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "required": false,
+            "autocomplete": "tel",
+            "label": {
+              "en": "Phone",
+              "tr": "Telefon"
+            }
+          },
+          {
+            "name": "current_location",
+            "type": "text",
+            "required": false,
+            "autocomplete": "address-level2",
+            "label": {
+              "en": "Current location",
+              "tr": "Mevcut konum"
+            }
+          },
+          {
+            "name": "sector",
+            "type": "select",
+            "required": true,
+            "source": "sectors"
+          },
+          {
+            "name": "target_role",
+            "type": "text",
+            "required": true,
+            "label": {
+              "en": "Target role",
+              "tr": "Hedef pozisyon"
+            }
+          },
+          {
+            "name": "linkedin",
+            "type": "url",
+            "required": false,
+            "label": {
+              "en": "LinkedIn profile",
+              "tr": "LinkedIn profili"
+            }
+          },
+          {
+            "name": "cv",
+            "type": "file",
+            "required": true,
+            "accept": [
+              ".pdf",
+              ".docx"
+            ],
+            "max_size_mb": 5,
+            "label": {
+              "en": "Upload CV (PDF or DOCX, max 5 MB)",
+              "tr": "CV yükle (PDF veya DOCX, en fazla 5 MB)"
+            }
+          },
+          {
+            "name": "privacy_acknowledgment",
+            "type": "checkbox",
+            "required": true,
+            "label": {
+              "en": "I have read the candidate privacy notice.",
+              "tr": "Aday gizlilik bildirimini okudum."
+            },
+            "link": "/candidate-privacy/"
+          },
+          {
+            "name": "future_opportunities_opt_in",
+            "type": "checkbox",
+            "required": false,
+            "label": {
+              "en": "I would like my profile to be considered for future opportunities.",
+              "tr": "Profilimin gelecekteki fırsatlar için değerlendirilmesini istiyorum."
+            }
+          }
         ]
       }
     ]
   },
-  "faq_title": { "en": "Questions, answered", "tr": "Sık sorulan sorular" },
+  "faq_title": {
+    "en": "Questions, answered",
+    "tr": "Sık sorulan sorular"
+  },
   "faq": [
-    { "q": { "en": "Which sectors do you focus on?", "tr": "Hangi sektörlere odaklanıyorsunuz?" }, "a": { "en": "Our primary focus is financial markets, real estate and selected technical sectors. Other assignments are considered according to scope and capability.", "tr": "Ana odağımız finansal piyasalar, gayrimenkul ve seçili teknik sektörlerdir. Diğer projeleri kapsam ve uzmanlık uygunluğuna göre değerlendiririz." } },
-    { "q": { "en": "Do you support HR projects beyond recruitment?", "tr": "İşe alım dışında İK projelerine destek veriyor musunuz?" }, "a": { "en": "Yes. The service model includes organizational design, workforce planning, outsourced HR support and payroll administration.", "tr": "Evet. Hizmet modelimiz organizasyon tasarımı, iş gücü planlaması, dış kaynak İK desteği ve bordro yönetimini kapsar." } },
-    { "q": { "en": "How are assignments priced?", "tr": "Projeler nasıl fiyatlandırılır?" }, "a": { "en": "Fees depend on the role, scope, complexity and delivery model. A written proposal defines the commercial terms.", "tr": "Ücretler pozisyona, kapsama, karmaşıklığa ve hizmet modeline göre belirlenir. Ticari koşullar yazılı teklifte tanımlanır." } },
-    { "q": { "en": "Do candidates pay a fee?", "tr": "Adaylar ücret ödüyor mu?" }, "a": { "en": "No. Recruitment or placement fees are never charged to candidates.", "tr": "Hayır. Adaylardan hiçbir koşulda işe alım veya yerleştirme ücreti alınmaz." } },
-    { "q": { "en": "How do you assess candidates?", "tr": "Adayları nasıl değerlendiriyorsunuz?" }, "a": { "en": "Assessment combines role-specific criteria, structured interviews and relevant specialist input. A person, not an automated score, makes every decision.", "tr": "Değerlendirme; pozisyona özgü ölçütleri, yapılandırılmış mülakatları ve ilgili uzman katkısını birleştirir. Her kararı otomatik bir skor değil, bir insan verir." } },
-    { "q": { "en": "Does payroll support mean NUUK & Human becomes the employer?", "tr": "Bordro desteğinde NUUK & Human işveren mi oluyor?" }, "a": { "en": "No. The client remains the employer. Payroll support covers agreed administrative and review tasks.", "tr": "Hayır. Müşteri işveren olarak kalır. Bordro desteği, mutabık kalınan yönetim ve kontrol görevlerini kapsar." } }
+    {
+      "q": {
+        "en": "Which sectors do you focus on?",
+        "tr": "Hangi sektörlere odaklanıyorsunuz?"
+      },
+      "a": {
+        "en": "Our primary focus is financial markets, real estate and selected technical sectors. Other assignments are considered according to scope and capability.",
+        "tr": "Ana odağımız finansal piyasalar, gayrimenkul ve seçili teknik sektörlerdir. Diğer projeleri kapsam ve uzmanlık uygunluğuna göre değerlendiririz."
+      }
+    },
+    {
+      "q": {
+        "en": "Do you support HR projects beyond recruitment?",
+        "tr": "İşe alım dışında İK projelerine destek veriyor musunuz?"
+      },
+      "a": {
+        "en": "Yes. The service model includes organizational design, workforce planning, outsourced HR support and payroll administration.",
+        "tr": "Evet. Hizmet modelimiz organizasyon tasarımı, iş gücü planlaması, dış kaynak İK desteği ve bordro yönetimini kapsar."
+      }
+    },
+    {
+      "q": {
+        "en": "How are assignments priced?",
+        "tr": "Projeler nasıl fiyatlandırılır?"
+      },
+      "a": {
+        "en": "Fees depend on the role, scope, complexity and delivery model. A written proposal defines the commercial terms.",
+        "tr": "Ücretler pozisyona, kapsama, karmaşıklığa ve hizmet modeline göre belirlenir. Ticari koşullar yazılı teklifte tanımlanır."
+      }
+    },
+    {
+      "q": {
+        "en": "Do candidates pay a fee?",
+        "tr": "Adaylar ücret ödüyor mu?"
+      },
+      "a": {
+        "en": "No. Recruitment or placement fees are never charged to candidates.",
+        "tr": "Hayır. Adaylardan hiçbir koşulda işe alım veya yerleştirme ücreti alınmaz."
+      }
+    },
+    {
+      "q": {
+        "en": "How do you assess candidates?",
+        "tr": "Adayları nasıl değerlendiriyorsunuz?"
+      },
+      "a": {
+        "en": "Assessment combines role-specific criteria, structured interviews and relevant specialist input. A person, not an automated score, makes every decision.",
+        "tr": "Değerlendirme; pozisyona özgü ölçütleri, yapılandırılmış mülakatları ve ilgili uzman katkısını birleştirir. Her kararı otomatik bir skor değil, bir insan verir."
+      }
+    },
+    {
+      "q": {
+        "en": "Does payroll support mean NUUK & Human becomes the employer?",
+        "tr": "Bordro desteğinde NUUK & Human işveren mi oluyor?"
+      },
+      "a": {
+        "en": "No. The client remains the employer. Payroll support covers agreed administrative and review tasks.",
+        "tr": "Hayır. Müşteri işveren olarak kalır. Bordro desteği, mutabık kalınan yönetim ve kontrol görevlerini kapsar."
+      }
+    }
   ],
   "ui": {
-    "skip": { "en": "Skip to content", "tr": "İçeriğe geç" },
-    "menu": { "en": "Menu", "tr": "Menü" },
-    "close": { "en": "Close", "tr": "Kapat" },
-    "language_switch": { "en": "Türkçe", "tr": "English" },
-    "language_switch_label": { "en": "Switch to Turkish", "tr": "İngilizceye geç" },
-    "learn_more": { "en": "Learn more", "tr": "Detaylı bilgi" },
-    "all_services": { "en": "All services", "tr": "Tüm hizmetler" },
-    "all_sectors": { "en": "All sectors", "tr": "Tüm sektörler" },
-    "meet_founders": { "en": "Meet the founders", "tr": "Kurucularla tanışın" },
-    "legal": { "en": "Legal", "tr": "Yasal" },
-    "draft_banner": { "en": "Preview site — company details and legal notices are being finalized.", "tr": "Önizleme sitesi — şirket bilgileri ve yasal metinler tamamlanıyor." },
-    "legal_pending": { "en": "This notice is being prepared and will be published before any personal data is collected through this website.", "tr": "Bu bildirim hazırlanıyor ve bu site üzerinden herhangi bir kişisel veri toplanmadan önce yayımlanacaktır." },
-    "not_found_title": { "en": "Page not found", "tr": "Sayfa bulunamadı" },
-    "not_found_body": { "en": "The page you were looking for does not exist.", "tr": "Aradığınız sayfa bulunamadı." },
-    "back_home": { "en": "Back to home", "tr": "Ana sayfaya dön" }
+    "skip": {
+      "en": "Skip to content",
+      "tr": "İçeriğe geç"
+    },
+    "menu": {
+      "en": "Menu",
+      "tr": "Menü"
+    },
+    "close": {
+      "en": "Close",
+      "tr": "Kapat"
+    },
+    "language_switch": {
+      "en": "Türkçe",
+      "tr": "English"
+    },
+    "language_switch_label": {
+      "en": "Switch to Turkish",
+      "tr": "İngilizceye geç"
+    },
+    "learn_more": {
+      "en": "Learn more",
+      "tr": "Detaylı bilgi"
+    },
+    "all_services": {
+      "en": "All services",
+      "tr": "Tüm hizmetler"
+    },
+    "all_sectors": {
+      "en": "All sectors",
+      "tr": "Tüm sektörler"
+    },
+    "meet_founders": {
+      "en": "Meet the founders",
+      "tr": "Kurucularla tanışın"
+    },
+    "legal": {
+      "en": "Legal",
+      "tr": "Yasal"
+    },
+    "draft_banner": {
+      "en": "Preview site — company details and legal notices are being finalized.",
+      "tr": "Önizleme sitesi — şirket bilgileri ve yasal metinler tamamlanıyor."
+    },
+    "legal_pending": {
+      "en": "This notice is being prepared.",
+      "tr": "Bu bildirim hazırlanıyor."
+    },
+    "not_found_title": {
+      "en": "Page not found",
+      "tr": "Sayfa bulunamadı"
+    },
+    "not_found_body": {
+      "en": "The page you were looking for does not exist.",
+      "tr": "Aradığınız sayfa bulunamadı."
+    },
+    "back_home": {
+      "en": "Back to home",
+      "tr": "Ana sayfaya dön"
+    },
+    "legal_draft_note": {
+      "en": "Draft under legal review · Last updated 24 September 2026",
+      "tr": "Hukuki inceleme aşamasında taslak · Son güncelleme 24 Eylül 2026"
+    }
   },
   "seo": {
-    "home_title": { "en": "NUUK & Human | Specialist Recruitment & HR Advisory", "tr": "NUUK & Human | Uzman İşe Alımı ve İK Danışmanlığı" },
+    "home_title": {
+      "en": "NUUK & Human | Specialist Recruitment & HR Advisory",
+      "tr": "NUUK & Human | Uzman İşe Alımı ve İK Danışmanlığı"
+    },
     "home_description": {
       "en": "Sector-focused recruitment and HR advisory for financial markets, real estate and technical businesses, with a focus on Dubai and the UAE.",
       "tr": "Dubai ve BAE odağında finansal piyasalar, gayrimenkul ve teknik işletmeler için uzman işe alımı ve insan kaynakları danışmanlığı."
     },
     "site_url": "https://ahmetsozt.github.io/nuukandhuman",
-    "indexing": false
+    "indexing": true
   },
   "legal_pages": [
-    { "id": "privacy", "path": "/privacy/", "title": { "en": "Privacy Notice", "tr": "Gizlilik Bildirimi" }, "content": null },
-    { "id": "candidate-privacy", "path": "/candidate-privacy/", "title": { "en": "Candidate Privacy Notice", "tr": "Aday Gizlilik Bildirimi" }, "content": null },
-    { "id": "terms", "path": "/terms/", "title": { "en": "Website Terms", "tr": "Site Kullanım Koşulları" }, "content": null },
-    { "id": "cookies", "path": "/cookies/", "title": { "en": "Cookie Information", "tr": "Çerez Bilgilendirmesi" }, "content": { "en": "This website does not set cookies and does not use analytics or advertising trackers. Fonts are loaded from Google Fonts, which receives your IP address when the page loads.", "tr": "Bu site çerez kullanmaz; analiz veya reklam izleyicisi içermez. Yazı tipleri Google Fonts üzerinden yüklenir; sayfa açıldığında IP adresiniz Google'a iletilir." } }
+    {
+      "id": "privacy",
+      "path": "/privacy/",
+      "title": {
+        "en": "Privacy Notice",
+        "tr": "Gizlilik Bildirimi"
+      },
+      "content": {
+        "en": [
+          {
+            "h": "Who we are",
+            "p": [
+              "NUUK & Human provides specialist recruitment and HR advisory services with a focus on Dubai and the United Arab Emirates. Full legal entity details will be added to this notice once company registration is complete."
+            ]
+          },
+          {
+            "h": "What this website collects",
+            "p": [
+              "This website does not use cookies, analytics or advertising trackers, and it does not store anything you type into its forms.",
+              "The site is hosted on GitHub Pages (GitHub, Inc.), which processes technical data such as your IP address in server logs to deliver the site and keep it secure. Fonts are loaded from Google Fonts, which also receives your IP address when a page loads."
+            ]
+          },
+          {
+            "h": "When you contact us",
+            "p": [
+              "Our forms open your own email app with the details you entered. Nothing is sent until you press send. We then receive what you chose to include in that email.",
+              "We use it to reply to you and, for employers, to understand the hiring need and prepare a proposal."
+            ]
+          },
+          {
+            "h": "Sharing",
+            "p": [
+              "We do not sell personal data. We share it only with service providers we need to run the business, such as our email provider. Candidate data is handled as described in the Candidate Privacy Notice."
+            ]
+          },
+          {
+            "h": "How long we keep it",
+            "p": [
+              "We keep your information only as long as we need it for the purpose you contacted us for, or as long as the law requires."
+            ]
+          },
+          {
+            "h": "Your rights",
+            "p": [
+              "You can ask us to show, correct or delete the information we hold about you, and you can withdraw any consent you have given. Reply to the email thread you used to contact us."
+            ]
+          },
+          {
+            "h": "Changes",
+            "p": [
+              "We will publish any changes on this page and update the date above."
+            ]
+          }
+        ],
+        "tr": [
+          {
+            "h": "Biz kimiz",
+            "p": [
+              "NUUK & Human, Dubai ve Birleşik Arap Emirlikleri odağında uzman işe alımı ve İK danışmanlığı hizmeti verir. Şirket tescili tamamlandığında tüzel kişilik bilgileri bu bildirime eklenecektir."
+            ]
+          },
+          {
+            "h": "Bu site hangi verileri toplar",
+            "p": [
+              "Bu site çerez, analiz veya reklam izleyicisi kullanmaz ve formlara yazdığınız hiçbir bilgiyi saklamaz.",
+              "Site GitHub Pages (GitHub, Inc.) üzerinde barındırılır; GitHub, siteyi sunmak ve güvenliğini sağlamak için IP adresiniz gibi teknik verileri sunucu kayıtlarında işler. Yazı tipleri Google Fonts üzerinden yüklenir; sayfa açıldığında IP adresiniz Google'a da iletilir."
+            ]
+          },
+          {
+            "h": "Bizimle iletişime geçtiğinizde",
+            "p": [
+              "Formlarımız, girdiğiniz bilgilerle kendi e-posta uygulamanızı açar. Siz gönder'e basana kadar hiçbir şey iletilmez. Ardından yalnızca o e-postaya eklemeyi seçtiğiniz bilgileri alırız.",
+              "Bu bilgileri size yanıt vermek ve işverenler için işe alım ihtiyacını anlayıp teklif hazırlamak amacıyla kullanırız."
+            ]
+          },
+          {
+            "h": "Paylaşım",
+            "p": [
+              "Kişisel verileri satmayız. Yalnızca işimizi yürütmek için gereken hizmet sağlayıcılarla, örneğin e-posta sağlayıcımızla paylaşırız. Aday verileri Aday Gizlilik Bildirimi'nde anlatıldığı şekilde işlenir."
+            ]
+          },
+          {
+            "h": "Saklama süresi",
+            "p": [
+              "Bilgilerinizi yalnızca bizimle iletişime geçme amacınız için gerektiği sürece veya yasanın öngördüğü süre boyunca saklarız."
+            ]
+          },
+          {
+            "h": "Haklarınız",
+            "p": [
+              "Hakkınızda tuttuğumuz bilgileri görmeyi, düzeltilmesini veya silinmesini isteyebilir, verdiğiniz onayı geri alabilirsiniz. Bunun için bizimle yazıştığınız e-posta dizisine yanıt vermeniz yeterlidir."
+            ]
+          },
+          {
+            "h": "Değişiklikler",
+            "p": [
+              "Değişiklikleri bu sayfada yayımlar ve yukarıdaki tarihi güncelleriz."
+            ]
+          }
+        ]
+      },
+      "draft": true
+    },
+    {
+      "id": "candidate-privacy",
+      "path": "/candidate-privacy/",
+      "title": {
+        "en": "Candidate Privacy Notice",
+        "tr": "Aday Gizlilik Bildirimi"
+      },
+      "content": {
+        "en": [
+          {
+            "h": "What we collect",
+            "p": [
+              "The details you send us: your name, contact details, location, sector, target role, LinkedIn profile, your CV and what it contains. If we take your application forward, we also keep notes from interviews and assessments."
+            ]
+          },
+          {
+            "h": "Why we use it",
+            "p": [
+              "To assess you for recruitment assignments that match your profile. If you ticked the future-opportunities box, we also consider you for later assignments."
+            ]
+          },
+          {
+            "h": "Who sees it",
+            "p": [
+              "Only the people working on the relevant assignment, under confidentiality. We share your profile with a prospective employer only after telling you which employer it is and getting your agreement."
+            ]
+          },
+          {
+            "h": "How decisions are made",
+            "p": [
+              "A person reviews every profile. Automated tools may help us organise information, but an automated score never decides on its own whether you move forward."
+            ]
+          },
+          {
+            "h": "What we never do",
+            "p": [
+              "We never charge candidates a fee. We do not use candidate data for marketing, and we do not send it to analytics or advertising services."
+            ]
+          },
+          {
+            "h": "How long we keep it",
+            "p": [
+              "If you did not opt in to future opportunities, we delete your data once it is no longer relevant to the assignment you applied for. If you opted in, we keep it until you withdraw that consent."
+            ]
+          },
+          {
+            "h": "Where it is handled",
+            "p": [
+              "We work across the Türkiye–UAE corridor, so your data may be accessed from both countries."
+            ]
+          },
+          {
+            "h": "Your rights",
+            "p": [
+              "You can ask to see, correct or delete your data and withdraw consent at any time by replying to the email thread you used to apply."
+            ]
+          }
+        ],
+        "tr": [
+          {
+            "h": "Hangi verileri topluyoruz",
+            "p": [
+              "Bize gönderdiğiniz bilgiler: adınız, iletişim bilgileriniz, konumunuz, sektörünüz, hedef pozisyonunuz, LinkedIn profiliniz, CV'niz ve içeriği. Başvurunuzu ilerletirsek mülakat ve değerlendirme notlarını da saklarız."
+            ]
+          },
+          {
+            "h": "Neden kullanıyoruz",
+            "p": [
+              "Profilinize uyan işe alım projelerinde sizi değerlendirmek için. Gelecekteki fırsatlar kutusunu işaretlediyseniz sizi sonraki projelerde de değerlendiririz."
+            ]
+          },
+          {
+            "h": "Kimler görür",
+            "p": [
+              "Yalnızca ilgili projede çalışan kişiler, gizlilik esasıyla. Profilinizi olası bir işverenle ancak size hangi işveren olduğunu söyleyip onayınızı aldıktan sonra paylaşırız."
+            ]
+          },
+          {
+            "h": "Kararlar nasıl verilir",
+            "p": [
+              "Her profili bir insan inceler. Otomatik araçlar bilgileri düzenlememize yardımcı olabilir, ancak otomatik bir skor hiçbir zaman ilerleyip ilerlemeyeceğinize tek başına karar vermez."
+            ]
+          },
+          {
+            "h": "Asla yapmadıklarımız",
+            "p": [
+              "Adaylardan hiçbir ücret almayız. Aday verilerini pazarlamada kullanmaz, analiz veya reklam hizmetlerine göndermeyiz."
+            ]
+          },
+          {
+            "h": "Saklama süresi",
+            "p": [
+              "Gelecekteki fırsatlara onay vermediyseniz, verilerinizi başvurduğunuz projeyle ilgisi kalmadığında sileriz. Onay verdiyseniz, onayınızı geri alana kadar saklarız."
+            ]
+          },
+          {
+            "h": "Veriler nerede işlenir",
+            "p": [
+              "Türkiye–BAE koridorunda çalıştığımız için verilerinize her iki ülkeden erişilebilir."
+            ]
+          },
+          {
+            "h": "Haklarınız",
+            "p": [
+              "Verilerinizi görmeyi, düzeltilmesini veya silinmesini isteyebilir ve onayınızı istediğiniz zaman geri alabilirsiniz. Bunun için başvuru yaptığınız e-posta dizisine yanıt vermeniz yeterlidir."
+            ]
+          }
+        ]
+      },
+      "draft": true
+    },
+    {
+      "id": "terms",
+      "path": "/terms/",
+      "title": {
+        "en": "Website Terms",
+        "tr": "Site Kullanım Koşulları"
+      },
+      "content": {
+        "en": [
+          {
+            "h": "About this website",
+            "p": [
+              "This website gives general information about NUUK & Human's recruitment and HR advisory services. Nothing on it is an offer of employment or a binding offer of services."
+            ]
+          },
+          {
+            "h": "Services and fees",
+            "p": [
+              "Assignments and fees are agreed only in a written proposal accepted by both sides. Submitting a profile or an inquiry does not guarantee an interview, a placement or a service."
+            ]
+          },
+          {
+            "h": "Not financial services",
+            "p": [
+              "NUUK & Human provides recruitment and HR advisory services only. It does not provide investment, brokerage or financial services, and nothing on this website is financial advice."
+            ]
+          },
+          {
+            "h": "Content and brand",
+            "p": [
+              "The text, design and the NUUK & Human name and logo belong to NUUK & Human. Please do not reuse them without permission."
+            ]
+          },
+          {
+            "h": "Accuracy",
+            "p": [
+              "We aim to keep this website accurate and current but cannot guarantee that it is free of errors or always available."
+            ]
+          },
+          {
+            "h": "Changes",
+            "p": [
+              "We may update these terms and will publish changes on this page."
+            ]
+          }
+        ],
+        "tr": [
+          {
+            "h": "Bu site hakkında",
+            "p": [
+              "Bu site, NUUK & Human'ın işe alım ve İK danışmanlığı hizmetleri hakkında genel bilgi verir. Sitedeki hiçbir içerik bir iş teklifi veya bağlayıcı hizmet teklifi değildir."
+            ]
+          },
+          {
+            "h": "Hizmetler ve ücretler",
+            "p": [
+              "Projeler ve ücretler yalnızca iki tarafça kabul edilen yazılı bir teklifle belirlenir. Profil veya talep göndermek mülakat, işe yerleştirme ya da hizmet garantisi değildir."
+            ]
+          },
+          {
+            "h": "Finansal hizmet değildir",
+            "p": [
+              "NUUK & Human yalnızca işe alım ve İK danışmanlığı hizmeti verir. Yatırım, aracılık veya finansal hizmet sunmaz; bu sitedeki hiçbir içerik yatırım tavsiyesi değildir."
+            ]
+          },
+          {
+            "h": "İçerik ve marka",
+            "p": [
+              "Sitedeki metinler, tasarım ve NUUK & Human adı ile logosu NUUK & Human'a aittir. İzin almadan kullanmayın."
+            ]
+          },
+          {
+            "h": "Doğruluk",
+            "p": [
+              "Bu sitenin doğru ve güncel olması için çalışırız, ancak hatasız veya her zaman erişilebilir olacağını garanti edemeyiz."
+            ]
+          },
+          {
+            "h": "Değişiklikler",
+            "p": [
+              "Bu koşulları güncelleyebiliriz; değişiklikleri bu sayfada yayımlarız."
+            ]
+          }
+        ]
+      },
+      "draft": true
+    },
+    {
+      "id": "cookies",
+      "path": "/cookies/",
+      "title": {
+        "en": "Cookie Information",
+        "tr": "Çerez Bilgilendirmesi"
+      },
+      "content": {
+        "en": "This website does not set cookies and does not use analytics or advertising trackers. Fonts are loaded from Google Fonts, which receives your IP address when the page loads.",
+        "tr": "Bu site çerez kullanmaz; analiz veya reklam izleyicisi içermez. Yazı tipleri Google Fonts üzerinden yüklenir; sayfa açıldığında IP adresiniz Google'a iletilir."
+      },
+      "draft": false
+    }
   ],
   "backend": {
     "form_endpoint": null,

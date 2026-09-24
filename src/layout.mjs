@@ -9,10 +9,25 @@ function csp(site) {
     "font-src https://fonts.gstatic.com",
     "img-src 'self' data:",
     `connect-src 'self' ${endpoint}`.trim(),
-    `form-action 'self' ${endpoint}`.trim(),
+    `form-action 'self' ${endpoint} mailto:`.replace(/\s+/g, " ").trim(),
     "base-uri 'self'",
     "object-src 'none'",
   ].join("; ");
+}
+
+/** Organization data with verified fields only (brief: populate_only_verified_fields). */
+function jsonLd(site, url, logo, lang) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: site.identity.name,
+    url,
+    logo,
+    description: t(site.identity.positioning, lang),
+    areaServed: "AE",
+  };
+  if (site.identity.contact.email) data.email = site.identity.contact.email;
+  return JSON.stringify(data).replace(/</g, "\\u003c");
 }
 
 function head(ctx, { title, description, path, altPath = path }) {
@@ -33,6 +48,13 @@ function head(ctx, { title, description, path, altPath = path }) {
     `<meta property="og:title" content="${esc(title)}">`,
     `<meta property="og:description" content="${esc(description)}">`,
     `<meta property="og:type" content="website">`,
+    `<meta property="og:url" content="${esc(abs(lang))}">`,
+    `<meta property="og:site_name" content="${esc(site.identity.name)}">`,
+    `<meta property="og:image" content="${esc(origin + urls.asset("og-image.png"))}">`,
+    '<meta property="og:image:width" content="1200">',
+    '<meta property="og:image:height" content="630">',
+    '<meta name="twitter:card" content="summary_large_image">',
+    path === "/" ? `<script type="application/ld+json">${jsonLd(site, abs(lang), origin + urls.asset("logo-ink.png"), lang)}</script>` : "",
     `<meta property="og:locale" content="${lang === "tr" ? "tr_TR" : "en_US"}">`,
     `<meta name="theme-color" content="${esc(site.design.palette.ink)}">`,
     `<link rel="icon" href="${urls.asset("favicon.svg")}" type="image/svg+xml">`,

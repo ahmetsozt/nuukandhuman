@@ -351,6 +351,10 @@ fieldset:disabled .field { opacity: 0.6; }
 /* Contact + legal */
 .contact-details { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); display: grid; gap: 0.75rem; }
 .prose { max-width: 44rem; font-size: 1.05rem; color: var(--muted); }
+.prose h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.7rem; line-height: 1.2; color: var(--ink); margin: 2.5rem 0 0.75rem; }
+.prose p + p { margin-top: 0.9rem; }
+.legal-note { display: inline-block; font-size: 0.8rem; font-weight: 600; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-pill); padding: 0.35rem 0.9rem; }
+.field-note p { padding: 0.9rem 1.1rem; border-radius: 0.6rem; background: var(--paper); color: var(--muted); font-size: 0.92rem; }
 
 /* Footer */
 .site-footer { background: var(--ink); color: var(--muted-on-dark); padding: 5rem 0 2rem; font-size: 0.9rem; }

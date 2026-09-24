@@ -9,11 +9,18 @@ Live preview: https://ahmetsozt.github.io/nuukandhuman/
 - Local preview: `npm run serve` → http://localhost:4321/nuukandhuman/
 - Deploy: push to `main`; GitHub Actions builds and publishes to Pages.
 
-## Before launch
+## Forms
 
-- `backend.form_endpoint` is `null`, so both forms render **disabled** and cannot show a success message.
-  Set it to an HTTPS endpoint that validates server-side, rate-limits, checks real file types and stores CVs privately.
-- `identity.contact.*`, legal name, licence and address are `null` and are not shown.
-- Legal pages (privacy, candidate privacy, terms) still need real text.
-- `seo.indexing` is `false`: every page is `noindex` and `robots.txt` blocks crawlers. Flip it after the above.
+Forms pick a mode automatically from `content/site.json`:
+
+| Setting | Mode | Behaviour |
+|---|---|---|
+| `backend.form_endpoint` set (https) | endpoint | POSTs to your server; success only on a 2xx reply. |
+| `identity.contact.email` set | email | Opens the visitor's mail app pre-filled; the candidate attaches the CV there. |
+| neither | offline | Rendered but disabled (current state). |
+
+## Still open
+
+- `identity.contact.email` is `null`, so the forms are offline and Contact shows "coming soon". Add an address to switch the forms to email mode.
+- Privacy, candidate privacy and terms are **drafts** (marked on the page). They need legal review, and the company legal name and address once registered.
 - Custom domain: write a `CNAME` file into `dist/` from `src/build.mjs`, set `seo.site_url`, and build with `BASE_PATH=""`.

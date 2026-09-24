@@ -15,3 +15,6 @@
 8. **Cookie page** has real content: the site sets no cookies and loads fonts from Google Fonts.
 9. **FAQ answers** start with a direct yes/no where the question is yes/no.
 10. **Founder track record** stays hidden (`display_by_default: false`), as in the brief.
+11. **Launch settings (2026-09-24):** indexing on (sitemap, robots Allow, no preview banner), Open Graph
+    image, Organization JSON-LD with verified fields only, draft privacy/candidate-privacy/terms texts,
+    and an email form mode that turns on when `identity.contact.email` is set.
