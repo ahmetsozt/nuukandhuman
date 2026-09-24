@@ -1,0 +1,12 @@
+{
+  "name": "nuukandhuman",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NUUK & Human — specialist recruitment & HR advisory website (static, bilingual EN/TR).",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "test": "node --test --experimental-test-coverage test/*.test.mjs",
+    "serve": "node src/build.mjs && node scripts/serve.mjs"
+  }
+}
